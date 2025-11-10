@@ -1,0 +1,291 @@
+{
+	"version": 9,
+	"type": "full",
+	"companionBuild": "4.1.3+8475-stable-02928d8be8",
+	"expressionVariables": {
+		"IW6b0z40hcoJhZeM1JAb3": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pgm_cam2_active",
+				"description": "Detects CAM2 in PGM direct or SSRC.",
+				"sortOrder": 1,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "XkBY0e5yd-6ZtzuS7Pr0q",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pgm1_input_id) == 2 || ($(atem:pgm1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 2 || $(atem:ssrc1_box2_source_id) == 2 || $(atem:ssrc1_box3_source_id) == 2 || $(atem:ssrc1_box4_source_id) == 2)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"VmGHii3jt3iGlHFhYPpip": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pvw_cam6_active",
+				"description": "Detects CAM6 in PVW direct or SSRC.",
+				"sortOrder": 11,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "jHyZdFfL0-6Vmmmx85F8y",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pvw1_input_id) == 6 || ($(atem:pvw1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 6 || $(atem:ssrc1_box2_source_id) == 6 || $(atem:ssrc1_box3_source_id) == 6 || $(atem:ssrc1_box4_source_id) == 6)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"GDYTWO_e-q7FDbQAdetL_": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pgm_cam1_active",
+				"description": "Detects CAM1 in PGM direct or SSRC.",
+				"sortOrder": 0,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "ZMcafb6rbIrxkeJzoe-Gj",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pgm1_input_id) == 1 || ($(atem:pgm1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 1 || $(atem:ssrc1_box2_source_id) == 1 || $(atem:ssrc1_box3_source_id) == 1 || $(atem:ssrc1_box4_source_id) == 1)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"IxDIS41npRzkM7sQuPVr8": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pvw_cam1_active",
+				"description": "Detects CAM1 in PVW direct or SSRC.",
+				"sortOrder": 6,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "u97UNkwR23NTqGrqfDbsq",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pvw1_input_id) == 1 || ($(atem:pvw1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 1 || $(atem:ssrc1_box2_source_id) == 1 || $(atem:ssrc1_box3_source_id) == 1 || $(atem:ssrc1_box4_source_id) == 1)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"TSW-RXKx3UwXB0CfLwXMY": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pgm_cam3_active",
+				"description": "Detects CAM3 in PGM direct or SSRC.",
+				"sortOrder": 2,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "yiT-iasv-p2zQNGHGUl8S",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pgm1_input_id) == 3 || ($(atem:pgm1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 3 || $(atem:ssrc1_box2_source_id) == 3 || $(atem:ssrc1_box3_source_id) == 3 || $(atem:ssrc1_box4_source_id) == 3)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"JkDEDaMoy_4ApAr4v28fy": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pgm_cam5_active",
+				"description": "Detects CAM5 in PGM direct or SSRC.",
+				"sortOrder": 4,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "nxJJNicgqDDu5bbMhgLoo",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pgm1_input_id) == 5 || ($(atem:pgm1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 5 || $(atem:ssrc1_box2_source_id) == 5 || $(atem:ssrc1_box3_source_id) == 4 || $(atem:ssrc1_box4_source_id) == 5)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"DZ-Yd7Dd3jyCd3CzsbhOn": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pgm_cam4_active",
+				"description": "Detects CAM4 in PGM direct or SSRC.",
+				"sortOrder": 3,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "yC6IxVrJv86_dLW3HzQiL",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pgm1_input_id) == 4 || ($(atem:pgm1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 4 || $(atem:ssrc1_box2_source_id) == 4 || $(atem:ssrc1_box3_source_id) == 4 || $(atem:ssrc1_box4_source_id) == 4)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"3iRtt0TP4LwX0P4nzXLwh": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pgm_cam6_active",
+				"description": "Detects CAM6 in PGM direct or SSRC.",
+				"sortOrder": 5,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "0V5_CqncGrIG-cYZmk8-I",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pgm1_input_id) == 6 || ($(atem:pgm1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 6 || $(atem:ssrc1_box2_source_id) == 6 || $(atem:ssrc1_box3_source_id) == 6 || $(atem:ssrc1_box4_source_id) == 6)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"3kmA6daHBZs6xwrHxADCp": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pvw_cam2_active",
+				"description": "Detects CAM2 in PVW direct or SSRC.",
+				"sortOrder": 7,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "jFD88zNUV2tEYlAM7a_kM",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pvw1_input_id) == 2 || ($(atem:pvw1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 2 || $(atem:ssrc1_box2_source_id) == 2 || $(atem:ssrc1_box3_source_id) == 2 || $(atem:ssrc1_box4_source_id) == 2)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"Cyu8Oxz8MwE_HXu76lpE2": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pvw_cam3_active",
+				"description": "Detects CAM3 in PVW direct or SSRC.",
+				"sortOrder": 8,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "LNu1X5idhaH3yCE2IzKwF",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pvw1_input_id) == 3 || ($(atem:pvw1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 3 || $(atem:ssrc1_box2_source_id) == 3 || $(atem:ssrc1_box3_source_id) == 3 || $(atem:ssrc1_box4_source_id) == 3)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"ePT2nL8N0vlIRY5Hv8UKP": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pvw_cam4_active",
+				"description": "Detects CAM4 in PVW direct or SSRC.",
+				"sortOrder": 9,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "2vSz4to4s2pAgpk7IbE9k",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pvw1_input_id) == 4 || ($(atem:pvw1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 4 || $(atem:ssrc1_box2_source_id) == 4 || $(atem:ssrc1_box3_source_id) == 4 || $(atem:ssrc1_box4_source_id) == 4)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		},
+		"pj9sQ3DPVF47Z338p-UjD": {
+			"type": "expression-variable",
+			"options": {
+				"variableName": "pvw_cam5_active",
+				"description": "Detects CAM5 in PVW direct or SSRC.",
+				"sortOrder": 10,
+				"collectionId": "mGFp25uG8_HsVFPgdWQOt"
+			},
+			"entity": {
+				"id": "zVqWaefn1CRujURj8zUG6",
+				"definitionId": "expression_value",
+				"connectionId": "internal",
+				"options": {
+					"expression": "($(atem:pvw1_input_id) == 5 || ($(atem:pvw1_input_id) == 6000 && ($(atem:ssrc1_box1_source_id) == 5 || $(atem:ssrc1_box2_source_id) == 5 || $(atem:ssrc1_box3_source_id) == 5 || $(atem:ssrc1_box4_source_id) == 5)))"
+				},
+				"type": "feedback",
+				"style": {},
+				"isInverted": false,
+				"children": {}
+			},
+			"localVariables": []
+		}
+	},
+	"expressionVariablesCollections": [
+		{
+			"id": "mGFp25uG8_HsVFPgdWQOt",
+			"label": "Expressions Variables Tally Lilliput RM-209",
+			"sortOrder": 0,
+			"children": [],
+			"metaData": null
+		}
+	],
+	"instances": {
+		"q3phcCbOOBEDqNhO1o0X4": {
+			"instance_type": "bmd-atem",
+			"label": "atem",
+			"lastUpgradeIndex": 6,
+			"moduleVersionId": "3.18.0",
+			"updatePolicy": "manual",
+			"sortOrder": 2
+		}
+	},
+	"connectionCollections": []
+}

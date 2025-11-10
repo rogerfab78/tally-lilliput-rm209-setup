@@ -1,0 +1,1043 @@
+{
+	"version": 9,
+	"type": "full",
+	"companionBuild": "4.1.3+8475-stable-02928d8be8",
+	"triggers": {
+		"lzr7fuaJp1mhEU2pH6Ssd": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam1 Off",
+				"enabled": true,
+				"sortOrder": 12,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "TXjgJu4TOaWtpV_KC9hbq",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=off&band=1&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "wIDxl58lXZN2eQiR_Pqma",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam1_active) == false && $(expression:pvw_cam1_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "Aa36lJXkLRUBK3MKNge-x",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam1_active"
+					}
+				},
+				{
+					"id": "kjK7KAJu1EuqHnK1fdfpa",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam1_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"pRrIPE8QXn2WFjYryFxEl": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam1 PVW Vert",
+				"enabled": true,
+				"sortOrder": 1,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "sfurpibqzNmH_xtNZ4IBT",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=vert&band=1&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "PY3iwA9BBTJRXC_tJWA-X",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pvw_cam1_active) == true && $(expression:pgm_cam1_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "x9GaroPDhC2j-WRLPw-xo",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam1_active"
+					}
+				},
+				{
+					"id": "ijscDPoGEWBy0oLLvWuly",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam1_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"fLT05X0Gg9zKS-MU6JJai": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam1 PGM Rouge",
+				"enabled": true,
+				"sortOrder": 0,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "Gt7Gx351XcIsLVJ-qZske",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=rouge&band=1&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "0CDaaZ8bKWerLNu5UKVNV",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam1_active) == true"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "pl2szAFyCVFIjJeBzj64Y",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam1_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"SwOsE3sLGL9um5YX0zsR6": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam2 PGM Rouge",
+				"enabled": true,
+				"sortOrder": 2,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "SJAXxWr88Ph8L0IMRaOmI",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=rouge&band=1&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "FTZVyjqtKzXaRfh40mKWI",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam2_active) == true"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "pl2szAFyCVFIjJeBzj64Y",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam2_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"VvrqiNSsenLkwad-L6IWk": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam2 PVW Vert",
+				"enabled": true,
+				"sortOrder": 3,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "OVkSe78D9c3xeKSkDl3kG",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=vert&band=1&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "6yHAn_uigDK4oMiT1juDN",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pvw_cam2_active) == true && $(expression:pgm_cam2_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "x9GaroPDhC2j-WRLPw-xo",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam2_active"
+					}
+				},
+				{
+					"id": "ijscDPoGEWBy0oLLvWuly",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam2_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"wl9TSNpMfJ15Ka7Heh5Bq": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam2 Off",
+				"enabled": true,
+				"sortOrder": 13,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "HnIMBF9HOYn5zj_8YNRui",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=off&band=1&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "uCGrfl7WLS-QoiWn7XEUA",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam2_active) == false && $(expression:pvw_cam2_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "Aa36lJXkLRUBK3MKNge-x",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam2_active"
+					}
+				},
+				{
+					"id": "kjK7KAJu1EuqHnK1fdfpa",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam2_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"9W9OTRuRlL5WdoPxphorg": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam3 PGM Rouge",
+				"enabled": true,
+				"sortOrder": 4,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "TS3IRgWFD-0jb86hsIkYg",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=rouge&band=2&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "23IHP4pKSvfCdapTe2GSD",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam3_active) == true"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "pl2szAFyCVFIjJeBzj64Y",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam3_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"67NIZkVLzpJO3tM5F7u01": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam3 PVW Vert",
+				"enabled": true,
+				"sortOrder": 5,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "X1C56DMIArC0GCTvaYKmH",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=vert&band=2&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "pUsMqLNpEia47vG7b9pMt",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pvw_cam3_active) == true && $(expression:pgm_cam3_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "x9GaroPDhC2j-WRLPw-xo",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam3_active"
+					}
+				},
+				{
+					"id": "ijscDPoGEWBy0oLLvWuly",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam3_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"wW5hT2_5Hb35l5SZeennP": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam3 Off",
+				"enabled": true,
+				"sortOrder": 14,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "9LuKFgydeOCE35JNlpb_L",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=off&band=2&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "AijV6aDoUaI2nV53VyhHG",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam3_active) == false && $(expression:pvw_cam3_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "Aa36lJXkLRUBK3MKNge-x",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam3_active"
+					}
+				},
+				{
+					"id": "kjK7KAJu1EuqHnK1fdfpa",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam3_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"guctfR8QDm_o-wp7AwzG-": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam4 PGM Rouge",
+				"enabled": true,
+				"sortOrder": 6,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "E5F1Gxtonbl8w2Iz6oNUy",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=rouge&band=2&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "iKwlnvwUqGEK9ZsW8dUuk",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam4_active) == true"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "pl2szAFyCVFIjJeBzj64Y",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam4_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"dkyJDUdUzwkYGO8nT3SJX": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam4 PVW Vert",
+				"enabled": true,
+				"sortOrder": 7,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "2cXEPg7q1n1tAOC-Ffj_Q",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=vert&band=2&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "ZRkR3M0UEgcryLjVxw0k_",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pvw_cam4_active) == true && $(expression:pgm_cam4_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "x9GaroPDhC2j-WRLPw-xo",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam4_active"
+					}
+				},
+				{
+					"id": "ijscDPoGEWBy0oLLvWuly",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam4_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"7smLsjz_jW5WPjsnmd2Xt": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam4 Off",
+				"enabled": true,
+				"sortOrder": 15,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "a0chLqosQE1zSmS1tPKqE",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=off&band=2&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "YFKgpDa3ll0j5-MDiEdkA",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam4_active) == false && $(expression:pvw_cam4_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "Aa36lJXkLRUBK3MKNge-x",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam4_active"
+					}
+				},
+				{
+					"id": "kjK7KAJu1EuqHnK1fdfpa",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam4_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"b7H1cCIQNFjwap1P-Aqrp": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam5 PGM Rouge",
+				"enabled": true,
+				"sortOrder": 8,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "_MHLWKBSsKnE6IvHVTKYw",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=rouge&band=3&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "Tfjh-AeEYvuqvW5Ssim6p",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam5_active) == true"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "pl2szAFyCVFIjJeBzj64Y",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam5_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"HqAFclboqHsY618UA0V_Y": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam5 PVW Vert",
+				"enabled": true,
+				"sortOrder": 9,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "K-T1Gc-zkMpbx3sJ5dovd",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=vert&band=3&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "g9JdCFHOAjE5iza72_FpN",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pvw_cam5_active) == true && $(expression:pgm_cam5_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "x9GaroPDhC2j-WRLPw-xo",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam5_active"
+					}
+				},
+				{
+					"id": "ijscDPoGEWBy0oLLvWuly",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam5_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"7W_i87ksHO-o3L-IzxaJj": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam5 Off",
+				"enabled": true,
+				"sortOrder": 16,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "xhnZKEog059p_ig35GtSl",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=off&band=3&id=1",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "-PSrHLTFUrRB_JnWMtyJE",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam5_active) == false && $(expression:pvw_cam5_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "Aa36lJXkLRUBK3MKNge-x",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam5_active"
+					}
+				},
+				{
+					"id": "kjK7KAJu1EuqHnK1fdfpa",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam5_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"4CgQ7atnSZ7mER_8bZ1AD": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam6 PGM Rouge",
+				"enabled": true,
+				"sortOrder": 10,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "X7uCSUZoPZvk4IFr5KQjE",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=rouge&band=3&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "IE2_MNrXOmujEqyw1Nb7W",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam6_active) == true"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "pl2szAFyCVFIjJeBzj64Y",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam6_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"mxA4TrSBksZvFMwa8RQDt": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam6 PVW Vert",
+				"enabled": true,
+				"sortOrder": 11,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "D7IvMU4mPfXapvyZThCEJ",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=vert&band=3&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "vv0f-PIphgGxO9n6i2wM3",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pvw_cam6_active) == true && $(expression:pgm_cam6_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "x9GaroPDhC2j-WRLPw-xo",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam6_active"
+					}
+				},
+				{
+					"id": "ijscDPoGEWBy0oLLvWuly",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam6_active"
+					}
+				}
+			],
+			"localVariables": []
+		},
+		"Fke1RNGU8yXPSKJd84hXA": {
+			"type": "trigger",
+			"options": {
+				"name": "Tally Cam6 Off",
+				"enabled": true,
+				"sortOrder": 17,
+				"collectionId": "xYBFrJLfASD84aAHAC9bV"
+			},
+			"actions": [
+				{
+					"id": "v31-nt89wJqra6J1TJbzM",
+					"definitionId": "get",
+					"connectionId": "_1hbktOkB3ESEgLhoP3dQ",
+					"options": {
+						"url": "/?state=off&band=3&id=2",
+						"header": "",
+						"result_stringify": true
+					},
+					"upgradeIndex": 1,
+					"type": "action"
+				}
+			],
+			"condition": [
+				{
+					"id": "2dIwwooKtuo0fb79FWA_D",
+					"definitionId": "check_expression",
+					"connectionId": "internal",
+					"options": {
+						"expression": "$(expression:pgm_cam6_active) == false && $(expression:pvw_cam6_active) == false"
+					},
+					"type": "feedback",
+					"style": {
+						"color": 16777215,
+						"bgcolor": 16711680
+					},
+					"isInverted": false,
+					"children": {}
+				}
+			],
+			"events": [
+				{
+					"id": "Aa36lJXkLRUBK3MKNge-x",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pgm_cam6_active"
+					}
+				},
+				{
+					"id": "kjK7KAJu1EuqHnK1fdfpa",
+					"type": "variable_changed",
+					"enabled": true,
+					"options": {
+						"variableId": "expression:pvw_cam6_active"
+					}
+				}
+			],
+			"localVariables": []
+		}
+	},
+	"triggerCollections": [
+		{
+			"id": "xYBFrJLfASD84aAHAC9bV",
+			"label": "Triggers Tally Lilliput RM-209",
+			"sortOrder": 0,
+			"children": [],
+			"metaData": {
+				"enabled": true
+			}
+		}
+	],
+	"instances": {
+		"_1hbktOkB3ESEgLhoP3dQ": {
+			"instance_type": "generic-http",
+			"label": "RM209_Tally-Bridge",
+			"lastUpgradeIndex": 1,
+			"moduleVersionId": "2.5.0",
+			"updatePolicy": "stable",
+			"sortOrder": 1
+		}
+	},
+	"connectionCollections": []
+}
